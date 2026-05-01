@@ -1,0 +1,18 @@
+[package]
+name = "alani-kernel"
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE"
+publish = false
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+
+[package.metadata.alani]
+tier = "MVK required"
+owner = "Kernel team"
+architectural_dependencies = ["alani-abi", "alani-platform", "alani-ipc", "alani-storage", "alani-filesystem", "alani-devices", "alani-security", "alani-audit", "alani-observability", "alani-policy"]
+aliases = []
